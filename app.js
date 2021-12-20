@@ -133,3 +133,17 @@ function findNeedle(array) {
 }
 
 // console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']));
+
+// ## Sum the Positive
+
+function sumPositive(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > 0) {
+            sum += array[i];
+        }
+    }
+    return sum;
+}
+
+// console.log(sumPositive([1, -4, 7, 12]));
