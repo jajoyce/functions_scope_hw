@@ -16,18 +16,32 @@ function calculateCube(num) {
 
 function isAVowel(character) {
     if (typeof character !== "string" || character.length !== 1) {
-        return "Input one charcter."
+        return "Input one charcter."; 
     }
     if (character.toLowerCase() === "y") {
-        return "Usually a vowel, but not always."
+        return "Usually a vowel, but not always."; 
     }
     let vowels = ["a", "e", "i", "o", "u"];
     for (let i = 0; i < vowels.length; i++) {
         if (character === vowels[i]) {
-            return true;
+            return true; 
         }
     }
-    return false;
+    return false; 
 }
 
 // console.log(isAVowel("a")); 
+
+// ## 4. Get Two Lengths 
+
+function getTwoLengths(string1, string2) {
+    if (typeof string1 !== "string" || typeof string2 !== "string") {
+        return "Input two strings.";
+    }
+    let lengthsArray = [];
+    lengthsArray.push(string1.length);
+    lengthsArray.push(string2.length);
+    return lengthsArray;
+}
+
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
