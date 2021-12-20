@@ -93,3 +93,31 @@ function printLongestWord(strArray) {
 }
 
 // console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+
+// ### Bonus
+
+// ## Project Euler Problem
+
+function eulerFibo (maxNum) {
+    if (maxNum < 2) {
+        return "Max number must be at least 2.";
+    }
+    let firstFibo = 0;
+    let secondFibo = 1;
+    let firstCopy = 0;
+    let evenArray = [];
+    console.log(firstFibo);
+    while (secondFibo <= maxNum) {
+        console.log(secondFibo);
+        if (secondFibo % 2 === 0) {
+            evenArray.push(secondFibo);
+        }
+        firstCopy = firstFibo;
+        firstFibo = secondFibo;
+        secondFibo += firstCopy;
+    }
+    console.log(`Even Fibonacci numbers: ${evenArray.join(", ")}`);
+    return `Sum of even Fibonacci numbers: ${evenArray.reduce((a, b) => a + b)}`;
+}
+
+console.log(eulerFibo(4000000));
