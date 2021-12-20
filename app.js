@@ -60,3 +60,22 @@ function sumArray(array) {
 }
 
 // console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+// ## 6. Prime Numbers 
+
+function checkPrime(num) {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+// console.log(checkPrime(97));
+
+function printPrimes(num) {
+    for (let i = 2; i <= num; i++) {
+        if (checkPrime(i)) console.log(i);
+    }
+}
+
+// printPrimes(97);
