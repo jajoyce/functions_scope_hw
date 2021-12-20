@@ -4,3 +4,10 @@
 // 2. Return actually outputs a result wherever the function is called that can then be used further, while console.log just prints the output to the console/terminal.
 // 3. A value returned by a function can be used and reused within and throughout your code wherever you would use any value, instead of e.g. only sending a message to the console. 
 
+// ## 2. Calculate the Cube
+
+function calculateCube(num) {
+    return num ** 3;
+}
+
+// console.log(calculateCube(5));
