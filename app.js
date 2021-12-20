@@ -45,3 +45,18 @@ function getTwoLengths(string1, string2) {
 }
 
 // console.log(getTwoLengths("Hank", "Hippopopalous"));
+
+// ## 5. Sum Array
+
+function sumArray(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof array[i] !== "number") {
+            return "Input an array of numbers.";
+        }
+        sum += array[i];
+    }
+    return sum;
+}
+
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
