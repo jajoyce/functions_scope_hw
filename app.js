@@ -121,3 +121,15 @@ function eulerFibo (maxNum) {
 }
 
 console.log(eulerFibo(4000000));
+
+// ## A Needle in the Haystack
+
+function findNeedle(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].toLowerCase() === "needle") {
+            return `Found the needle at position ${i}`;
+        }
+    }
+}
+
+// console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']));
